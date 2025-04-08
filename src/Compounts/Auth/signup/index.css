@@ -1,0 +1,7 @@
+.auth-page {
+    background: linear-gradient(to right, #09091b, #2C3E50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

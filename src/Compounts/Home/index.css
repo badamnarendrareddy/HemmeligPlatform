@@ -1,0 +1,44 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    color: #d6d6d6;
+  }
+  
+  .home-container p {
+    font-size: 1.2rem;
+    color: #d4d4d4;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  .background{
+    background: linear-gradient(to right, #09091b, #2C3E50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

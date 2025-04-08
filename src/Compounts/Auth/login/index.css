@@ -1,0 +1,204 @@
+/* Base Styles */
+.auth-page {
+  background: linear-gradient(to right, #09091b, #2C3E50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background: linear-gradient(to right, #09091b, #2C3E50);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 10% auto; /* Center the container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 26px;
+  color: #d1ddea;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 12px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Login Button */
+button:nth-child(3) {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+button:nth-child(3) svg {
+  margin-right: 8px;
+}
+
+/* Google Login Button */
+button:nth-child(4) {
+  background-color: #777;
+  color: #fff;
+}
+                    
+button:nth-child(4) svg {
+  margin-right: 8px;
+}
+
+/* Links */
+p {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #777;
+}
+
+p a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #45a049;
+  text-decoration: underline;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Success Messages */
+.success-message {
+  color: #4CAF50;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4CAF50;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 25px 30px;
+    margin: 20% auto;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+/* Additional Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-container {
+  animation: fadeIn 0.5s ease;
+}
+.button{
+  color: #e0e0e0;
+  background-color: #777;
+}
